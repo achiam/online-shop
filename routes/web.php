@@ -11,5 +11,8 @@
 |
 */
 
-Route::get('/','BaseController@getIndex');
-Route::get('/{id}','BaseController@getOne');//всегда последним должен быть !!!!
+Route::get('/', 'BaseController@getIndex');
+Route::get('{id}', 'SaticController@getIndex');
+
+
+
